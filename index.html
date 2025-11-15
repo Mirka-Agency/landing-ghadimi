@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-R" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - فروشگاه سنگ قدیمی</title>
+    <style>
+      /* --- Basic Reset & Font --- */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      /* --- Utility Classes --- */
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* --- Header & Hero Section --- */
+      .header {
+        background: #fff;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .header .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #2c3e50;
+        text-decoration: none;
+      }
+
+      .hero {
+        background: #34495e;
+        color: #ffffff;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: #e67e22;
+        color: #ffffff;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background: #d35400;
+      }
+
+      /* --- Section Styling --- */
+      section {
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+        color: #2c3e50;
+      }
+
+      /* --- Products & Portfolio Grid --- */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .grid-item {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        text-align: right;
+        transition: transform 0.3s ease;
+      }
+
+      .grid-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .grid-item-content {
+        padding: 20px;
+      }
+
+      .grid-item h3 {
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      /* --- Final CTA Section --- */
+      .cta-section {
+        background: #2c3e50;
+        color: #ffffff;
+      }
+
+      .cta-section h2 {
+        color: #ffffff;
+      }
+
+      .cta-section p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+      }
+
+      /* --- Fixed Call Button (Your Requirement) --- */
+      .fixed-call-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px; /* Change to 'right: 20px;' if you prefer it on the right */
+        background-color: #25d366; /* WhatsApp Green */
+        color: white;
+        padding: 15px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: transform 0.3s ease;
+      }
+
+      .fixed-call-button:hover {
+        transform: scale(1.05);
+      }
+
+      /* --- Footer --- */
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">فروشگاه سنگ قدیمی</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>فروش انواع سنگ های ورقه ای و ساختمانی</h1>
+      <p>خرید مستقیم از معدن با بهترین کیفیت و قیمت</p>
+      <a href="#contact" class="cta-button">مشاوره و ثبت سفارش</a>
+    </section>
+
+    <section id="products" class="container">
+      <h2>محصولات ما</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            src="https://sangvaraghei.ir/wp-content/uploads/2023/02/Sierra-Stone.jpg"
+            alt="سنگ ورقه ای"
+          />
+          <div class="grid-item-content">
+            <h3>سنگ ورقه ای</h3>
+            <p>موجود در رنگ های قرمز، قهوه ای، مشکی و ...</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://damavandsang.ir/wp-content/uploads/white-malone-stone.webp"
+            alt="سنگ مالون"
+          />
+          <div class="grid-item-content">
+            <h3>سنگ مالون</h3>
+            <p>ایده آل برای ساخت دیوار، پله و محوطه سازی.</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://sangvaraghei.ir/wp-content/uploads/2023/02/crushed-rock-landscaping-1.jpg"
+            alt="سنگ قلوه"
+          />
+          <div class="grid-item-content">
+            <h3>سنگ قلوه ای</h3>
+            <p>مناسب برای تزئین باغچه، کف و فضای سبز.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="container">
+      <h2>نمونه کارهای ما</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            src="https://sangvaraghei.ir/wp-content/uploads/2023/07/IMG-20221229-WA0000.jpg"
+            alt="نمونه کار 1"
+          />
+          <div class="grid-item-content">
+            <h3>پروژه ویلای دماوند</h3>
+            <p>استفاده از سنگ مالون سفید برای نمای دیوار.</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://sangvaraghei.ir/wp-content/uploads/2023/07/IMG-20221229-WA0002.jpg"
+            alt="نمونه کار 2"
+          />
+          <div class="grid-item-content">
+            <h3>محوطه سازی باغ</h3>
+            <p>کف سازی با سنگ ورقه ای طوسی.</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://sangvaraghei.ir/wp-content/uploads/2023/07/IMG-20221229-WA0006.jpg"
+            alt="نمونه کار 3"
+          />
+          <div class="grid-item-content">
+            <h3>دیوار باغ</h3>
+            <p>اجرای دیوار سنگی با سنگ لاشه.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+      <div class="container">
+        <h2>آماده دریافت مشاوره رایگان هستید؟</h2>
+        <p>برای اطلاع از قیمت ها و دریافت مشاوره تخصصی با ما تماس بگیرید.</p>
+        <a href="tel:09354653137" class="cta-button">همین حالا تماس بگیرید</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>تمامی حقوق وبسایت برای سنگ قدیمی محفوظ می باشد.</p>
+    </footer>
+
+    <a href="tel:09354653137" class="fixed-call-button"> 📞 تماس فوری </a>
+  </body>
+</html>
